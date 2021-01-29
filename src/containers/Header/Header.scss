@@ -1,0 +1,75 @@
+.header-container {
+    background-color: #4d1ba8;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    .header-content {
+      display: flex;
+      margin: 1rem 10rem;
+      .logo {
+        width: 15rem;
+      }
+      .header-buttons {
+        display: flex;
+        margin-left: auto;
+        margin-top: auto;
+        .menu-button:not(:last-child) {
+            margin-right: 1rem;
+        }
+        button {
+          border: none;
+          outline: none;
+          color: white;
+          font-size: 20px;
+          background-color: #4d1ba8;
+          cursor: pointer;
+          &:hover {
+            color: #ef4b74;
+          }
+        }
+        .dropdown {
+          position: relative;
+          display: inline-block;
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            z-index: 1;
+            padding-top: 0.5rem;
+            &::after {
+              position: absolute;
+              top: 0;
+              left: 1rem;
+              content: '';
+              transform: translateX(-50%);
+              border-left: 0.5rem solid transparent;
+              border-right: 0.5rem solid transparent;
+              border-bottom: 0.5rem solid #ef4b74;
+            }
+            a {
+              color: black;
+              background-color: #ef4b74;
+              padding: 0.5rem 1rem;
+              width: 10rem;
+              text-decoration: none;
+              display: block;
+              &:hover {
+                color: white;
+              }
+              &:not(:last-child) {
+                border-bottom: 1px solid #bf3b5c;
+              }
+              &:first-child {
+                border-top-left-radius: 0.5rem;
+                border-top-right-radius: 0.5rem;
+              }
+              &:last-child {
+                border-bottom-left-radius: 0.5rem;
+                border-bottom-right-radius: 0.5rem;
+              }
+            }
+          }
+        }
+        .dropdown:hover .dropdown-content { display: block; }
+      }
+    }
+  }
