@@ -1,8 +1,8 @@
 import React from 'react';
 
 import './Footer.scss';
+import { URL_NAMES } from 'constants/constants';
 import data from '../../data';
-import { URL_NAMES } from '../../constants';
 
 const Footer = () => (
   <div className="footer">
