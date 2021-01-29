@@ -1,10 +1,9 @@
 import React from 'react';
 
-import './App.scss';
-import Header from 'containers/Header/Header';
-import MainParagraph from 'containers/MainParagraph/MainParagraph';
-import AdditionalParagraph from 'containers/AdditionalParagraph/AdditionalParagraph';
-import Footer from 'containers/Footer/Footer';
+import Header from 'containers/Header';
+import MainParagraph from 'containers/MainParagraph';
+import AdditionalParagraph from 'containers/AdditionalParagraph';
+import Footer from 'containers/Footer';
 
 const App = () => (
   <div>
