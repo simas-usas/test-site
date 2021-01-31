@@ -1,20 +1,29 @@
 import React from 'react';
+import { useQuery } from '@apollo/client';
+
+import { GET_FOOTER_TEXT } from 'api/queries';
 
 import './Footer.scss';
 import { URL_NAMES } from 'constants/constants';
-import data from '../../data';
 
-const Footer = () => (
-  <div className="footer">
-    <div className="footer-hyperlinks">
-      <div className="url">{URL_NAMES.HOME}</div>
-      <div className="url">{URL_NAMES.PPROJECTS}</div>
-      <div className="url">{URL_NAMES.ABOUT_US}</div>
-      <div className="url">{URL_NAMES.TESTIMONIALS}</div>
-      <div className="url">{URL_NAMES.CONTACTS}</div>
+const Footer = () => {
+  const { loading, data } = useQuery(GET_FOOTER_TEXT);
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  return (
+    <div className="footer">
+      <div className="footer-hyperlinks">
+        <div className="url">{URL_NAMES.HOME}</div>
+        <div className="url">{URL_NAMES.PPROJECTS}</div>
+        <div className="url">{URL_NAMES.ABOUT_US}</div>
+        <div className="url">{URL_NAMES.TESTIMONIALS}</div>
+        <div className="url">{URL_NAMES.CONTACTS}</div>
+      </div>
+      <div>{data.footerText}</div>
     </div>
-    <div>{data.footer}</div>
-  </div>
-);
+  );
+};
 
 export default Footer;
