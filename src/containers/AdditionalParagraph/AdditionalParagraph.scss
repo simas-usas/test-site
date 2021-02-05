@@ -1,9 +1,21 @@
 .additional-paragraph {
     display: flex;
-    padding: 1.5rem 10rem;
+    padding: 0.5rem 10rem;
     margin-bottom: 2rem;
     background: radial-gradient(circle farthest-side, #d7d4d9 40%, #f0eef2 80%);
     .column {
         padding: 0 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .additional-paragraph {
+        flex-direction: column;
+        margin: 0 5% 2rem;
+        padding: 0;
+        background: none;
+        .column {
+            padding: 0;
+        }
     }
 }

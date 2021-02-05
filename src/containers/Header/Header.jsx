@@ -1,8 +1,9 @@
 import React from 'react';
 
-import './Header.scss';
 import Logo from 'assets/logo.svg';
 import { URL_NAMES, PROJECT_NAMES } from 'constants/constants';
+
+import './Header.scss';
 
 const Header = () => (
   <div className="header-container">

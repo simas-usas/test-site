@@ -13,7 +13,7 @@ const AdditionalParagraph = () => {
 
   return (
     <div className="additional-paragraph">
-      {data.additionalParagraph.map(item => <div key={item.id} className="column">{item.text}</div>)}
+      {data.additionalParagraph.map(item => <p key={item.id} className="column">{item.text}</p>)}
     </div>
   );
 };
