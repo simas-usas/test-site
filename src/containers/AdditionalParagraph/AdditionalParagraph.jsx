@@ -1,5 +1,6 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
+import { map } from 'lodash';
 
 import { GET_ADDITIONAL_PARAGRAPH } from 'api/queries';
 
@@ -13,7 +14,7 @@ const AdditionalParagraph = () => {
 
   return (
     <div className="additional-paragraph">
-      {data.additionalParagraph.map(item => <p key={item.id} className="column">{item.text}</p>)}
+      {map(data.additionalParagraph, item => <p key={item.id} className="column">{item.text}</p>)}
     </div>
   );
 };
