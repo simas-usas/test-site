@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { useQuery } from '@apollo/client';
+import { useQuery, useMutation } from '@apollo/client';
 import { isEmpty, map } from 'lodash';
 
+import { SUBMIT_FORM } from 'api/mutations';
 import { GET_MAIN_PARAGRAPH, GET_FORM_TEXT } from 'api/queries';
 import FormInput from 'components/FormInput';
 import FormTextArea from 'components/FormTextArea';
@@ -18,6 +19,7 @@ const MainParagraph = () => {
 
   const mainParagraphQuery = useQuery(GET_MAIN_PARAGRAPH);
   const formTextQuery = useQuery(GET_FORM_TEXT);
+  const [submitForm] = useMutation(SUBMIT_FORM);
 
   if (mainParagraphQuery.loading || formTextQuery.loading) {
     return <div>Loading...</div>;
@@ -38,7 +40,10 @@ const MainParagraph = () => {
         setIsMessageValid(false);
       }
     } else {
-      console.log('validate form');
+      submitForm({ variables: { firstName, lastName, message } });
+      setFirstName('');
+      setLastName('');
+      setMessage('');
     }
   };
 
