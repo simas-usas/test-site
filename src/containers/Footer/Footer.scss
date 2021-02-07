@@ -1,24 +1,31 @@
+@import 'constants/colors';
+@import 'constants/sizes';
+
 .footer {
-    padding: 1.5rem 10rem;
-    background-color: #a4a2a6;
-    .footer-hyperlinks {
-        display: flex;
-        margin-bottom: 1.5rem;
-        .url {
-        color: white;
-            &:not(:last-child)::after {
-                content: "\2022";
-                margin: 0 0.5rem;
-            }
-        }
+  padding: 1.5rem 10rem;
+  background-color: $grey-dark;
+  .footer-hyperlinks {
+    display: flex;
+    margin-bottom: 1.5rem;
+    .url {
+      color: $white;
+      &:not(:last-child)::after {
+        content: "\2022";
+        margin: 0 0.5rem;
+      }
+      a {
+        color: $white;
+        text-decoration: none;
+      }
     }
+  }
 }
 
-@media only screen and (max-width: 768px) {
-    .footer {
-        padding: 5%;
-        .footer-hyperlinks {
-            display: none;
-        }
+@media only screen and (max-width: $tablet-size) {
+  .footer {
+    padding: 5%;
+    .footer-hyperlinks {
+      display: none;
     }
+  }
 }

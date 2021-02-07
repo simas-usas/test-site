@@ -1,13 +1,15 @@
+@import 'constants/colors';
+
 .form-input {
   display: flex;
   flex-direction: column;
   label {
-    color: #ef4b74;
+    color: $pink;
   }
   input {
     padding: 0.5rem;
     border-radius: 0.5rem;
-    border: solid 1px #d1cbd9;
+    border: solid 1px $white-border;
   }
   p {
     margin: 0 0.5rem;

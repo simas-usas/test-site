@@ -15,11 +15,11 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-hyperlinks">
-        <div className="url">{URL_NAMES.HOME}</div>
-        <div className="url">{URL_NAMES.PPROJECTS}</div>
-        <div className="url">{URL_NAMES.ABOUT_US}</div>
-        <div className="url">{URL_NAMES.TESTIMONIALS}</div>
-        <div className="url">{URL_NAMES.CONTACTS}</div>
+        <div className="url"><a href="#">{URL_NAMES.HOME}</a></div>
+        <div className="url"><a href="#">{URL_NAMES.PPROJECTS}</a></div>
+        <div className="url"><a href="#">{URL_NAMES.ABOUT_US}</a></div>
+        <div className="url"><a href="#">{URL_NAMES.TESTIMONIALS}</a></div>
+        <div className="url"><a href="#">{URL_NAMES.CONTACTS}</a></div>
       </div>
       <div>{data.footerText}</div>
     </div>

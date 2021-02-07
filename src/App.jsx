@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
+import AdditionalParagraph from 'containers/AdditionalParagraph';
+import Footer from 'containers/Footer';
 import Header from 'containers/Header';
 import HeaderMobile from 'containers/HeaderMobile/HeaderMobile';
 import MainParagraph from 'containers/MainParagraph';
-import AdditionalParagraph from 'containers/AdditionalParagraph';
-import Footer from 'containers/Footer';
 
 const App = () => {
   const [isDesktop, setDesktop] = useState(window.innerWidth > 768);
