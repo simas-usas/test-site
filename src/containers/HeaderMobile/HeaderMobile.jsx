@@ -16,7 +16,9 @@ const HeaderMobile = () => {
     }
     window.addEventListener('click', (e) => {
       if (open
+        && document.getElementById('side-nav')
         && !document.getElementById('side-nav').contains(e.target)
+        && document.getElementById('side-nav-button')
         && !document.getElementById('side-nav-button').contains(e.target)
       ) {
         setOpen(false);

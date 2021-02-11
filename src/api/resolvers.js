@@ -6,7 +6,7 @@ export default {
       { id: 3, text: 'Quisque a justo efficitur, sagittis felis at, maximus lacus. Sed id tempor mauris. Suspendisse eget ipsum nibh. Nam ornare sodales mi quis ornare. Ut at accumsan felis. Nulla facilisi. Praesent at ligula commodo neque varius tempus sit amet et ligula. Phasellus elementum sem ante, vel cursus sapien pulvinar sed. Nulla dui eros, vehicula non ipsum in, suscipit accumsan eros.' },
       { id: 4, text: 'Sed arcu purus, hendrerit sed rutrum vel, faucibus sed lectus. Cras consectetur dolor et risus commodo tempus. Nullam porta eros eros, sit amet consectetur justo varius vel. Aenean gravida rutrum tellus, non hendrerit justo venenatis at. Vivamus faucibus at lacus rhoncus maximus. Duis pretium placerat placerat.' },
     ],
-    formText: () => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    formText: () => 'Quisque a justo efficitur, sagittis felis at, maximus lacus. Sed id tempor mauris. Suspendisse eget ipsum nibh. Nam ornare sodales mi quis ornare. Ut at accumsan felis. Nulla facilisi.',
     additionalParagraph: () => [
       { id: 1, text: 'Quisque a justo efficitur, sagittis felis at, maximus lacus. Sed id tempor mauris. Suspe disse eget ipsum nibh. Nam ornare sodales mi quis ornare. Ut at accumsan felis. Nullade facilisi retro.' },
       { id: 2, text: 'Suspendisse eu orci elit. In id commodo mauris. Fusce nec imperdiet nibh. Integer a erat sceleri sque, pellentesque leo a, posuere justo. Etiam maximus, nibh a luctus sagittis, nibh elit tempus est, non dapibus nunc.' },

@@ -45,6 +45,7 @@
       display: block;
       &:hover {
         color: $white;
+        background-color: $pink-light;
       }
       &:not(:last-child) {
         border-bottom: 1px solid $pink-border;
